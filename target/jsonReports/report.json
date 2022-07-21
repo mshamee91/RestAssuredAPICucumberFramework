@@ -1,0 +1,153 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-07-12T19:08:27.526Z",
+        "line": 13,
+        "name": "verify Add Place API",
+        "description": "",
+        "id": "verify-maps-api;verify-add-place-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1956000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Add Place API with \"API house\" and \"306, side layout, cohen 09\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"API house\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"306, side layout, cohen 09\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepdefinitions.MapsSteps.add_place_api_with_name_and_address(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5778000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user calls \"AddPlace\" API with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlace\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepdefinitions.MapsSteps.user_calls_api_with_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 7000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user gets response with status code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 39
+                }
+              ],
+              "location": "stepdefinitions.MapsSteps.user_gets_response_with_status_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2350000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "response shows \"status\" as \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinitions.MapsSteps.response_shows_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "response shows \"scope\" as \"APP\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"scope\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"APP\"",
+                  "offset": 26
+                }
+              ],
+              "location": "stepdefinitions.MapsSteps.response_shows_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@All"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@AddPlace"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Verify Maps API",
+    "description": "",
+    "id": "verify-maps-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Maps.feature",
+    "tags": [
+      {
+        "name": "@All",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
